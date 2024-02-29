@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая на вход принимает
+// целое число N, а на выходе показывает все целые
+// числа в промежутке от -N до N.
+
+Console.Write("Input number:");
+int number1 = Convert.ToInt32(Console.ReadLine());
+int number2 = -number1;
+while(number2 <= number1)
+{
+    Console.Write($"{number2} ");
+    number2++;
+}
