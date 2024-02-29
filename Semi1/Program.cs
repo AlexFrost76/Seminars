@@ -18,9 +18,10 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 
 if (number1 == Math.Pow(number2,2))
 {
-    Console.WriteLine("Yes");
+     Console.WriteLine("Square of the number {1} is equal to  {0} ", number1, number2);
 }
 else
 {
-    Console.WriteLine("No");
+    Console.WriteLine($"Square of the number {number2} is not equal to  {number1} ");
 }
+// Console.WriteLine("Square of the number " + number2 + " equal to " + number1);
