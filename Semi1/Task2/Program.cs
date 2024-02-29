@@ -9,8 +9,11 @@ if (number1 < 0)
     number1 = -number1;
 }
 int number2 = -number1;
-while(number2 <= number1)
+while (number2 <= number1)
 {
-    Console.Write($"{number2} ");
+    if (number2 % 2 == 0)
+    {
+        Console.Write($"{number2} ");
+    }
     number2++;
 }
