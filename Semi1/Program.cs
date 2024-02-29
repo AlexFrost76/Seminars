@@ -7,7 +7,16 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("input second number: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-if (number1 == number2 * number2)
+// if (number1 == number2 * number2)
+// {
+//     Console.WriteLine("Yes");
+// }
+// else
+// {
+//     Console.WriteLine("No");
+// }
+
+if (number1 == Math.Pow(number2,2))
 {
     Console.WriteLine("Yes");
 }
