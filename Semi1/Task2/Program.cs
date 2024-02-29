@@ -4,6 +4,10 @@
 
 Console.Write("Input number:");
 int number1 = Convert.ToInt32(Console.ReadLine());
+if (number1 < 0)
+{
+    number1 = -number1;
+}
 int number2 = -number1;
 while(number2 <= number1)
 {
