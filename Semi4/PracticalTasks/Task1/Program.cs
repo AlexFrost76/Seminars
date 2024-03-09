@@ -10,7 +10,8 @@ class Program
         while (true)
         {
             Console.Write("Enter the numbe or 'q' for exit: ");
-            string input = Console.ReadLine();
+            string? input =  Console.ReadLine();
+       
             if (input == "q")
             {
                 break;
