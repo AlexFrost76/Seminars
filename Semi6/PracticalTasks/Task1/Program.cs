@@ -9,7 +9,12 @@ class Program
         //Console.WriteLine($"CharArray rows {CharArray.GetLength(0)}");
         //Console.WriteLine($"CharArray cols {CharArray.GetLength(1)}");
         
-         string str = "";
+         string str = StringFromArray(CharArray);
+         Console.WriteLine(str);
+    }
+    public static string StringFromArray(char[,] CharArray)
+    {
+        string str = "";
          for (int a = 0; a < CharArray.GetLength(0); a++ )
          {
              for (int b = 0; b < CharArray.GetLength(1); b++)
@@ -17,6 +22,6 @@ class Program
                 str = str + CharArray[a,b].ToString();
              }
          }
-         Console.WriteLine(str);
+         return str;
     }
 }
